@@ -1,10 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ficha">
+    android:orientation="vertical"
+    android:background="#E8F6F1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:cardElevation="25dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#D9F9F2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/download" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ficha del Paciente"
+                android:textSize="18sp"
+                android:textColor="#0F4C45"
+                android:fontFamily="@font/italika"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvTMarca"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Edad"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvTPais"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sexo"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvTEmpresa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono de emergencia"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvTTelefono"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Domicilio"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvDomicilio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Diagnostico"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvDiagnostico"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Estado Civil"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvEstCivil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fuma o Toma"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvFumaoToma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alergias"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvAlergias"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Seguro"
+                    android:textColor="#1E897B"
+                    android:fontFamily="@font/italika"/>
+
+                <TextView
+                    android:id="@+id/tvSeguro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#0F4C45"
+                    android:fontFamily="@font/cinzel"/>
+            </LinearLayout>
+            <Button
+                android:fontFamily="@font/cinzel"
+                android:id="@+id/btnllamar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#1E897B"
+                app:icon="@drawable/baseline_phone_24" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:fontFamily="@font/cinzel"
+        android:layout_gravity="center"
+        android:id="@+id/btnvolver"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Regresar a registros"
+        android:backgroundTint="#1E897B"
+        android:textColor="#E8F6F1"/>
+</LinearLayout>

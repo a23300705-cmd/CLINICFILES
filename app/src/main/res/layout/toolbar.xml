@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="80dp"
+    android:background="#49E0B3"
+    android:padding="10dp">
 
-</Toolbar>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/download"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="CLINICFILES"
+            android:fontFamily="@font/cinzel"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#0F4C45"
+            android:layout_height="100dp"
+            android:layout_width="190dp"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

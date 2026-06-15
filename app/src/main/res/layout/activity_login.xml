@@ -1,10 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    android:orientation="vertical"
+    android:background="#E8F6F1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".09"
+            android:scaleType="centerCrop"
+            android:src="@drawable/download"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/italika"
+                android:text="Usuario:"/>
+
+            <EditText
+                android:id="@+id/ETUSER"
+                android:layout_margin="20dp"
+                android:textSize="50sp"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cinzel"
+                android:hint="Ej: Miguel"/>
+
+            <TextView
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/italika"
+                android:text="Contraseña:"/>
+
+            <EditText
+                android:id="@+id/ETPASS"
+                android:layout_margin="20dp"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cinzel"
+                android:hint="EJ: $4F19"/>
+
+            <Button
+                android:fontFamily="@font/cinzel"
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:backgroundTint="#1E897B"
+                android:textColor="#E8F6F1"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

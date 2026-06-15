@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">CLINICFILES</string>
+    <string-array name="SEXO">
+        <item>Femenino</item>
+        <item>Masculino</item>
+        <item>No se identifica con alguno</item>
+    </string-array>
+    <string-array name="ESTCIVIL">
+        <item>Divorciado</item>
+        <item>Casado</item>
+        <item>Viudo</item>
+        <item>Unión libre</item>
+    </string-array>
+    <string-array name="ALERGIAS">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="Seguro">
+        <item>IMSS</item>
+        <item>ISSSTE</item>
+        <item>Privado</item>
+        <item>Ninguno</item>
+    </string-array>
+    <string-array name="FUMAoTOMA">
+        <item>Fuma</item>
+        <item>Toma</item>
+        <item>Ambas</item>
+        <item>Ninguno</item>
+    </string-array>
 </resources>
